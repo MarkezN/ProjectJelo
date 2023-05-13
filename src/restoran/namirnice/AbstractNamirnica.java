@@ -37,7 +37,6 @@ public abstract class AbstractNamirnica {
     public int getCena() {
         return cena;
     }
-
    @Override public String toString() {
         return "Naziv: " + naziv + ", cena: " + cena  + ", " + isDaLiJeLjuta();
     }      
