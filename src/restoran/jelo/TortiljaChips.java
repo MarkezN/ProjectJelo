@@ -21,23 +21,18 @@ public class TortiljaChips extends AbstractJelo {
         this.sos = sos;
         this.chips = chips;
     }
-
     public Sos getSos() {
         return sos;
     }
-
     public void setSos(Sos sos) {
         this.sos = sos;
     }
-
     public Tortilja getChips() {
         return chips;
     }
-
     public void setChips(Tortilja chips) {
         this.chips = chips;
     }
-
     @Override
     public boolean daLiJeLjuto() {
         if (this.sos.isDaLiJeLjuta() || this.chips.isDaLiJeLjuta()) {
@@ -45,11 +40,9 @@ public class TortiljaChips extends AbstractJelo {
         }
         return false;
     }
-
     @Override
     public int cena() {
         return chips.getCena() + sos.getCena();
-
     }
 
     @Override
