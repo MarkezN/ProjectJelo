@@ -14,13 +14,13 @@ import restoran.namirnice.Sir;
  * @author lab3 Marquez
  */
 public class Burrito extends ObrokSalata{
+    
     private Tortilja tortilja;
 
     public Burrito(Tortilja tortilja, Meso meso, Sir sir) {
         super(meso, sir);
         this.tortilja = tortilja;
     }
-
    @Override
     public String toString() {
        return "Naziv jela : " + "Burrito " + ", tortilja: " + this.tortilja;
