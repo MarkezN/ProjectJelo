@@ -19,11 +19,9 @@ public class Narudzbina {
     public Narudzbina() {
         this.stavke = new ArrayList();
     }
-
     public void dodajStavku(AbstractJelo jelo) {
         this.stavke.add(jelo);
     }
-
     public int cena() {
         int suma = 0;
         for (AbstractJelo s : stavke) {
@@ -31,7 +29,6 @@ public class Narudzbina {
         }
         return suma;
     }
-
     public String toString() {
         return "" + this.stavke;
     }
