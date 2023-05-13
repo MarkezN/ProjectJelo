@@ -9,15 +9,9 @@ package restoran.jelo;
  *
  * @author Marquez
  */
-public abstract class AbstractJelo {
-    
+public abstract class AbstractJelo { 
   
   public  abstract boolean daLiJeLjuto(); 
-
-  
-  //vraca total cenu svih sastojaka jela 
   public abstract int cena();
-  
-
-
+    
 }
