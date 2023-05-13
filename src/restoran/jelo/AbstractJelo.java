@@ -12,6 +12,6 @@ package restoran.jelo;
 public abstract class AbstractJelo { 
   
   public  abstract boolean daLiJeLjuto(); 
-  public abstract int cena();
+  public  abstract int cena();
     
 }
