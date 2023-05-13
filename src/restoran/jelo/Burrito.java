@@ -21,13 +21,8 @@ public class Burrito extends ObrokSalata{
         this.tortilja = tortilja;
     }
 
-    
    @Override
     public String toString() {
        return "Naziv jela : " + "Burrito " + ", tortilja: " + this.tortilja;
-   }
-
-    
-    
-    
+   }    
 }
