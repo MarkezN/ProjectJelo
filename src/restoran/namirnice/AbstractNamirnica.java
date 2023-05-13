@@ -19,36 +19,28 @@ public abstract class AbstractNamirnica {
         this.cena = cena;
         this.daLiJeLjuta = daLiJeLjuta; 
     }
-
     public void setNaziv(String naziv) {
         this.naziv = naziv;
     }
-
     public void setCena(int cena) {
         if(cena<0){
             throw new IllegalArgumentException("cena je negativna");
         }
         this.cena = cena;    
     }
-
     public void setDaLiJeLjuta(boolean daLiJeLjuta) {
         this.daLiJeLjuta = daLiJeLjuta;
     }
-
     public boolean isDaLiJeLjuta() {
         return daLiJeLjuta;
     }
-    
-
     public int getCena() {
         return cena;
     }
 
-//    @Override
    @Override public String toString() {
         return "Naziv: " + naziv + ", cena: " + cena  + ", " + isDaLiJeLjuta();
-    }
-      
+    }      
 }
   
 
