@@ -44,8 +44,6 @@ public abstract class AbstractNamirnica {
         return cena;
     }
 
- 
-
 //    @Override
    @Override public String toString() {
         return "Naziv: " + naziv + ", cena: " + cena  + ", " + isDaLiJeLjuta();
