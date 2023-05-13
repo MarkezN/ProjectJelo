@@ -28,15 +28,12 @@ public class ObrokSalata extends AbstractJelo {
         this.sosevi = new ArrayList();
         this.salate = new ArrayList();
     }
-
     public void dodajSos(Sos sos) {
         this.sosevi.add(sos);
     }
-
     public void dodajSalatu(Salata salata) {
         this.salate.add(salata);
-    }
-    
+    }    
     public boolean isSosLjut() {
         for(Sos s : this.sosevi) {
             if(s.isDaLiJeLjuta()) {
@@ -55,14 +52,11 @@ public class ObrokSalata extends AbstractJelo {
    }
     @Override
     public boolean daLiJeLjuto() {
-        if(isSosLjut() || isSalataLjut() || this.meso.isDaLiJeLjuta() || this.sir.isDaLiJeLjuta()) {
-         
-            return true;
-            
+        if(isSosLjut() || isSalataLjut() || this.meso.isDaLiJeLjuta() || this.sir.isDaLiJeLjuta()) {       
+            return true;           
         }
         return false;
     }
-
     public int cenaSos() {
         int c = 0;
         for (Sos s : sosevi) {
@@ -70,7 +64,6 @@ public class ObrokSalata extends AbstractJelo {
         }
         return c;
     }
-
     public int cenaSalata() {
         int c = 0;
         for (Salata s : this.salate) {
@@ -78,12 +71,10 @@ public class ObrokSalata extends AbstractJelo {
         }
         return c;
     }
-
     @Override
     public int cena() {
         return this.meso.getCena() + this.sir.getCena() + this.cenaSos() + this.cenaSalata();
     }
-
     @Override
     public String toString() {
         return "Naziv jela: " + "ObrokSalata " + ", meso: " + meso + ", sir: " + sir + ", sosevi: " + this.sosevi + " , salate: " + this.salate;
