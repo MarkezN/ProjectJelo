@@ -11,11 +11,8 @@ package restoran.namirnice;
  */
 public class Sir extends AbstractNamirnica{
    
-
     public Sir(String naziv, int cena, boolean daLiJeLjuta) {
-        super(naziv, cena, daLiJeLjuta);
-       
-    }
-    
+        super(naziv, cena, daLiJeLjuta);    
+    } 
 }
    
