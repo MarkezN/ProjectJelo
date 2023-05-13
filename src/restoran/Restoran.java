@@ -28,8 +28,7 @@ public class Restoran {
         Meso pilece = new Meso("pilece", 10, true);
         
         ObrokSalata pileca = new ObrokSalata(pilece, moz); 
-        pileca.dodajSos(s);
-           
+        pileca.dodajSos(s);           
         Narudzbina n1 = new Narudzbina();
         n1.dodajStavku(pileca);
         n1.cena();
