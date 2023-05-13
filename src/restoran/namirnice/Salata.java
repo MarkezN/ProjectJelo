@@ -11,11 +11,8 @@ package restoran.namirnice;
  */
 public class Salata extends AbstractNamirnica {
     
-
     public Salata(String naziv, int cena, boolean daLiJeLjuta) {
-        super(naziv, cena, daLiJeLjuta);
-        
-    }
-    
+        super(naziv, cena, daLiJeLjuta);   
+    }    
 }
 
