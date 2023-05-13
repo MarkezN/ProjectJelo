@@ -11,8 +11,7 @@ package restoran.jelo;
  */
 public abstract class AbstractJelo {
     
-    
-  //vraca true ako je bar jedan od sastojaka ljut, else --> false 
+  
   public  abstract boolean daLiJeLjuto(); 
 
   
