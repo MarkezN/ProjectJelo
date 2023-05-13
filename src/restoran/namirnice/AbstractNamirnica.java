@@ -17,8 +17,7 @@ public abstract class AbstractNamirnica {
     public AbstractNamirnica(String naziv, int cena, boolean daLiJeLjuta) {
         this.naziv = naziv;
         this.cena = cena;
-        this.daLiJeLjuta = daLiJeLjuta;
-        
+        this.daLiJeLjuta = daLiJeLjuta; 
     }
 
     public void setNaziv(String naziv) {
@@ -29,8 +28,7 @@ public abstract class AbstractNamirnica {
         if(cena<0){
             throw new IllegalArgumentException("cena je negativna");
         }
-        this.cena = cena;
-        
+        this.cena = cena;    
     }
 
     public void setDaLiJeLjuta(boolean daLiJeLjuta) {
